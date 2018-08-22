@@ -1,3 +1,5 @@
 # Facedetect_Python
-Usage:
+## Usage
 python facedect.py 
+
+![Screenshot](demo.png)
