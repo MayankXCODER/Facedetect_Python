@@ -1,5 +1,6 @@
-import cv2
+#Simple Face Detection code
 
+import cv2
 
 def convertToRGB(img): 
     return cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
