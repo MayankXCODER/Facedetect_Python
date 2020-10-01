@@ -4,10 +4,12 @@ import cv2
 
 def convertToRGB(img): 
     return cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+def convertToGray(img):
+    return cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
 test = cv2.imread('test.jpg')
 
-gray_img = cv2.cvtColor(test, cv2.COLOR_BGR2GRAY)
+gray_img = convertToGray('test.jpg')
 
 haar_face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 faces = haar_face_cascade.detectMultiScale(gray_img, scaleFactor=1.1, minNeighbors=5)
